@@ -1,0 +1,46 @@
+# =====================================================================
+# Actividad 2 - Aprendizaje Automático (UNIR)
+# Notebook: Act2_Housing_UNIR_V1.ipynb
+# Presentado por: Omar Javier Daza Leguizamón
+# Fecha: 13/09/2026
+#
+# REQUIERE PYTHON 3.12
+# TensorFlow publica ruedas únicamente para Python 3.10 a 3.13. Con
+# Python 3.14 la instalación falla con el mensaje:
+#   "No matching distribution found for tensorflow"
+# Crear el entorno con:  py -3.12 -m venv .venv
+# =====================================================================
+
+# --- Manipulación y análisis de datos (secciones 0 a 2) ---
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+
+# --- Modelos supervisados y no supervisados (secciones 3 a 6) ---
+scikit-learn>=1.4
+xgboost>=2.0
+
+# --- Red neuronal multicapa (sección 3.6) ---
+# En Windows nativo se instala la variante de CPU mantenida por Intel
+# (tensorflow-intel). Desde la versión 2.11 no hay soporte de GPU en
+# Windows nativo; para este conjunto de datos la CPU es suficiente.
+tensorflow>=2.16,<3
+
+# --- Aprendizaje por refuerzo (sección 7) ---
+gymnasium>=0.29
+
+# --- Graficas ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Entorno de trabajo ---
+jupyter>=1.0
+ipykernel>=6.29
+
+# =====================================================================
+# Versiones con las que se ejecutó y verificó el notebook:
+#   Python 3.12.10        numpy 2.5.3           pandas 3.0.5
+#   scipy 1.18.1          scikit-learn 1.9.1    matplotlib 3.11.2
+#   seaborn 0.13.2        xgboost 3.4.1         tensorflow 2.21.0
+#   keras 3.15.1          gymnasium 1.3.0
+# =====================================================================
